@@ -1,0 +1,132 @@
+﻿Build started 22-Sep-15 12:20:01 AM.
+     1>Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\ode-0.13\build\vs2008\ode.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I..\..\include /I..\..\ode\src /I..\..\ode\src\joints /I..\..\OPCODE /I..\..\GIMPACT\include /I..\..\libccd\src /I..\..\ou\include /nologo /W3 /WX- /O2 /Oy /D _MT /D NDEBUG /D dNODEBUG /D dIDESINGLE /D CCD_IDESINGLE /D WIN32 /D _CRT_SECURE_NO_DEPRECATE /D _USE_MATH_DEFINES /D _OU_NAMESPACE=odeou /D ODE_LIB /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"obj\ReleaseSingleLib\\" /Fd"..\..\..\binaries\Release\ode_single.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\ode\src\ode.cpp ..\..\ode\src\step.cpp
+         ode.cpp
+         step.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"..\..\..\binaries\Release\ode.lib" user32.lib /NOLOGO obj\ReleaseSingleLib\array.obj
+         obj\ReleaseSingleLib\box.obj
+         obj\ReleaseSingleLib\capsule.obj
+         obj\ReleaseSingleLib\collision_cylinder_box.obj
+         obj\ReleaseSingleLib\collision_cylinder_plane.obj
+         obj\ReleaseSingleLib\collision_cylinder_sphere.obj
+         obj\ReleaseSingleLib\collision_cylinder_trimesh.obj
+         obj\ReleaseSingleLib\collision_kernel.obj
+         obj\ReleaseSingleLib\collision_quadtreespace.obj
+         obj\ReleaseSingleLib\collision_sapspace.obj
+         obj\ReleaseSingleLib\collision_space.obj
+         obj\ReleaseSingleLib\collision_transform.obj
+         obj\ReleaseSingleLib\collision_trimesh_box.obj
+         obj\ReleaseSingleLib\collision_trimesh_ccylinder.obj
+         obj\ReleaseSingleLib\collision_trimesh_disabled.obj
+         obj\ReleaseSingleLib\collision_trimesh_distance.obj
+         obj\ReleaseSingleLib\collision_trimesh_gimpact.obj
+         obj\ReleaseSingleLib\collision_trimesh_opcode.obj
+         obj\ReleaseSingleLib\collision_trimesh_plane.obj
+         obj\ReleaseSingleLib\collision_trimesh_ray.obj
+         obj\ReleaseSingleLib\collision_trimesh_sphere.obj
+         obj\ReleaseSingleLib\collision_trimesh_trimesh.obj
+         obj\ReleaseSingleLib\collision_trimesh_trimesh_new.obj
+         obj\ReleaseSingleLib\collision_util.obj
+         obj\ReleaseSingleLib\convex.obj
+         obj\ReleaseSingleLib\cylinder.obj
+         obj\ReleaseSingleLib\error.obj
+         "obj\ReleaseSingleLib\export-dif.obj"
+         obj\ReleaseSingleLib\fastdot.obj
+         obj\ReleaseSingleLib\fastldlt.obj
+         obj\ReleaseSingleLib\fastlsolve.obj
+         obj\ReleaseSingleLib\fastltsolve.obj
+         obj\ReleaseSingleLib\heightfield.obj
+         obj\ReleaseSingleLib\amotor.obj
+         obj\ReleaseSingleLib\ball.obj
+         obj\ReleaseSingleLib\contact.obj
+         obj\ReleaseSingleLib\dball.obj
+         obj\ReleaseSingleLib\dhinge.obj
+         obj\ReleaseSingleLib\fixed.obj
+         obj\ReleaseSingleLib\hinge.obj
+         obj\ReleaseSingleLib\hinge2.obj
+         obj\ReleaseSingleLib\joint.obj
+         obj\ReleaseSingleLib\lmotor.obj
+         obj\ReleaseSingleLib\null.obj
+         obj\ReleaseSingleLib\piston.obj
+         obj\ReleaseSingleLib\plane2d.obj
+         obj\ReleaseSingleLib\pr.obj
+         obj\ReleaseSingleLib\pu.obj
+         obj\ReleaseSingleLib\slider.obj
+         obj\ReleaseSingleLib\transmission.obj
+         obj\ReleaseSingleLib\universal.obj
+         obj\ReleaseSingleLib\lcp.obj
+         obj\ReleaseSingleLib\mass.obj
+         obj\ReleaseSingleLib\mat.obj
+         obj\ReleaseSingleLib\matrix.obj
+         obj\ReleaseSingleLib\memory.obj
+         obj\ReleaseSingleLib\misc.obj
+         obj\ReleaseSingleLib\nextafterf.obj
+         obj\ReleaseSingleLib\objects.obj
+         obj\ReleaseSingleLib\obstack.obj
+         obj\ReleaseSingleLib\ode.obj
+         obj\ReleaseSingleLib\odeinit.obj
+         obj\ReleaseSingleLib\odemath.obj
+         obj\ReleaseSingleLib\odeou.obj
+         obj\ReleaseSingleLib\odetls.obj
+         obj\ReleaseSingleLib\plane.obj
+         obj\ReleaseSingleLib\quickstep.obj
+         obj\ReleaseSingleLib\ray.obj
+         obj\ReleaseSingleLib\rotation.obj
+         obj\ReleaseSingleLib\sphere.obj
+         obj\ReleaseSingleLib\step.obj
+         obj\ReleaseSingleLib\threading_base.obj
+         obj\ReleaseSingleLib\threading_impl.obj
+         obj\ReleaseSingleLib\threading_pool_posix.obj
+         obj\ReleaseSingleLib\threading_pool_win.obj
+         obj\ReleaseSingleLib\timer.obj
+         obj\ReleaseSingleLib\util.obj
+         obj\ReleaseSingleLib\IceAABB.obj
+         obj\ReleaseSingleLib\IceContainer.obj
+         obj\ReleaseSingleLib\IceHPoint.obj
+         obj\ReleaseSingleLib\IceIndexedTriangle.obj
+         obj\ReleaseSingleLib\IceMatrix3x3.obj
+         obj\ReleaseSingleLib\IceMatrix4x4.obj
+         obj\ReleaseSingleLib\IceOBB.obj
+         obj\ReleaseSingleLib\IcePlane.obj
+         obj\ReleaseSingleLib\IcePoint.obj
+         obj\ReleaseSingleLib\IceRandom.obj
+         obj\ReleaseSingleLib\IceRay.obj
+         obj\ReleaseSingleLib\IceRevisitedRadix.obj
+         obj\ReleaseSingleLib\IceSegment.obj
+         obj\ReleaseSingleLib\IceTriangle.obj
+         obj\ReleaseSingleLib\IceUtils.obj
+         obj\ReleaseSingleLib\Opcode.obj
+         obj\ReleaseSingleLib\OPC_AABBCollider.obj
+         obj\ReleaseSingleLib\OPC_AABBTree.obj
+         obj\ReleaseSingleLib\OPC_BaseModel.obj
+         obj\ReleaseSingleLib\OPC_Collider.obj
+         obj\ReleaseSingleLib\OPC_Common.obj
+         obj\ReleaseSingleLib\OPC_HybridModel.obj
+         obj\ReleaseSingleLib\OPC_LSSCollider.obj
+         obj\ReleaseSingleLib\OPC_MeshInterface.obj
+         obj\ReleaseSingleLib\OPC_Model.obj
+         obj\ReleaseSingleLib\OPC_OBBCollider.obj
+         obj\ReleaseSingleLib\OPC_OptimizedTree.obj
+         obj\ReleaseSingleLib\OPC_Picking.obj
+         obj\ReleaseSingleLib\OPC_PlanesCollider.obj
+         obj\ReleaseSingleLib\OPC_RayCollider.obj
+         obj\ReleaseSingleLib\OPC_SphereCollider.obj
+         obj\ReleaseSingleLib\OPC_TreeBuilders.obj
+         obj\ReleaseSingleLib\OPC_TreeCollider.obj
+         obj\ReleaseSingleLib\OPC_VolumeCollider.obj
+         obj\ReleaseSingleLib\atomic.obj
+         obj\ReleaseSingleLib\customization.obj
+         obj\ReleaseSingleLib\malloc.obj
+         obj\ReleaseSingleLib\threadlocalstorage.obj
+         obj\ReleaseSingleLib\outest.obj
+     1>odetls.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>collision_trimesh_gimpact.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         ode.vcxproj -> C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\ode-0.13\build\vs2008\..\..\..\binaries\Release\ode.lib
+     1>Done Building Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\ode-0.13\build\vs2008\ode.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:11.15

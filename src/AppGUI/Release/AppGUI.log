@@ -1,0 +1,27 @@
+﻿Build started 22-Sep-15 12:20:14 AM.
+     1>Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\AppGUI\AppGUI.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../binaries/Release\AppGUI.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:../../lib /LIBPATH:../../lib/ooqp C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\binaries\Release\ode.lib glew32.lib glu32.lib opengl32.lib tcl84.lib tk84.lib wsock32.lib comctl32.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"../binaries/Release\AppGUI.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"../binaries/Release\AppGUI.lib" /MACHINE:X86 /SAFESEH:NO Release\Application.obj
+         Release\ControllerEditor.obj
+         Release\CurveEditor.obj
+         Release\Globals.obj
+         Release\GLWindow.obj
+         Release\InteractionInterface.obj
+         Release\InteractiveWorld.obj
+         Release\main.obj
+         Release\SubGLWindow.obj
+         Release\tcltk.obj
+         Release\UI.obj
+         C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\binaries\Release\Core.lib
+         C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\binaries\Release\Utils.lib
+         C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\binaries\Release\GLUtils.lib
+         C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\binaries\Release\gsl.lib
+         C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\binaries\Release\MathLib.lib
+         C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\binaries\Release\Physics.lib
+     1>Physics.lib(ODEWorld.obj) : error LNK2001: unresolved external symbol "void __cdecl runTestStep(struct dxWorld *,float)" (?runTestStep@@YAXPAUdxWorld@@M@Z)
+     1>../binaries/Release\AppGUI.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\AppGUI\AppGUI.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:05.10

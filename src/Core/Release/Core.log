@@ -1,0 +1,50 @@
+﻿Build started 18-Sep-15 4:05:17 PM.
+     1>Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\Core\Core.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /I"../ode-0.13/include" /I../include /nologo /W3 /WX- /O2 /Oi /Ot /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /arch:SSE2 /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\Core.pdb" /Gd /TP /wd4996 /analyze- /errorReport:prompt BalanceFeedback.cpp BaseControlFramework.cpp Character.cpp Controller.cpp PoseController.cpp SimBiConFramework.cpp SimBiConState.cpp SimBiController.cpp SimGlobals.cpp
+         BalanceFeedback.cpp
+     1>../MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(1119): warning C4056: overflow in floating-point constant arithmetic
+         BaseControlFramework.cpp
+     1>../MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+         Character.cpp
+     1>../MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+         Controller.cpp
+     1>../MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+         PoseController.cpp
+     1>../MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+         SimBiConFramework.cpp
+     1>../MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+         SimBiConState.cpp
+     1>../MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+         SimBiController.cpp
+     1>../MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+         SimGlobals.cpp
+     1>../MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(1119): warning C4056: overflow in floating-point constant arithmetic
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"../binaries/Release\Core.lib" /NOLOGO /LTCG Release\BalanceFeedback.obj
+         Release\BaseControlFramework.obj
+         Release\Character.obj
+         Release\Controller.obj
+         Release\ConUtils.obj
+         Release\PoseController.obj
+         Release\SimBiConFramework.obj
+         Release\SimBiConState.obj
+         Release\SimBiController.obj
+         Release\SimGlobals.obj
+         Core.vcxproj -> C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\Core\../binaries/Release\Core.lib
+     1>Done Building Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\Core\Core.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.59

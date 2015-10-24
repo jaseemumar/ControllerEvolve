@@ -1,0 +1,96 @@
+﻿Build started 22-Sep-15 12:44:18 AM.
+     1>Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\Physics\Physics.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /I"../ode-0.13/include" /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\Physics.pdb" /Gd /TP /wd4996 /analyze- /errorReport:prompt ODEWorld.cpp
+         ODEWorld.cpp
+     1>C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+     1>ODEWorld.cpp(48): warning C4305: 'argument': truncation from 'double' to 'dReal'
+     1>ODEWorld.cpp(53): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(89): warning C4244: '=': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(90): warning C4244: '=': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(91): warning C4244: '=': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(92): warning C4244: '=': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(94): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(96): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(97): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(160): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(168): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(170): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(179): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(181): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(192): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(195): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(209): warning C4244: '=': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(210): warning C4244: '=': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(211): warning C4244: '=': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(212): warning C4244: '=': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(227): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(229): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(235): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(236): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(246): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(251): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(252): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(258): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(259): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(260): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(261): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(273): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(291): warning C4305: 'argument': truncation from 'double' to 'dReal'
+     1>ODEWorld.cpp(292): warning C4305: 'argument': truncation from 'double' to 'dReal'
+     1>ODEWorld.cpp(293): warning C4305: 'argument': truncation from 'double' to 'dReal'
+     1>ODEWorld.cpp(296): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(297): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(299): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(300): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(302): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(303): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(305): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(306): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(356): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(358): warning C4244: '=': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(359): warning C4244: '=': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(360): warning C4244: '=': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(361): warning C4244: '=': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(421): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(497): warning C4244: '=': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(498): warning C4244: '=': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(499): warning C4305: '=': truncation from 'double' to 'dReal'
+     1>ODEWorld.cpp(501): warning C4244: '=': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(502): warning C4244: '=': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(561): warning C4305: 'argument': truncation from 'double' to 'dReal'
+     1>ODEWorld.cpp(580): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(581): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(593): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(626): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(627): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(640): warning C4244: 'argument': conversion from 'double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(688): warning C4244: 'argument': conversion from 'const double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(698): warning C4244: 'argument': conversion from 'const double' to 'dReal', possible loss of data
+     1>ODEWorld.cpp(708): warning C4244: 'argument': conversion from 'const double' to 'dReal', possible loss of data
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"../binaries/Debug\Physics.lib" /NOLOGO Debug\AbstractRBEngine.obj
+         Debug\ArticulatedFigure.obj
+         Debug\ArticulatedRigidBody.obj
+         Debug\BallInSocketJoint.obj
+         Debug\BoxCDP.obj
+         Debug\CapsuleCDP.obj
+         Debug\CollisionDetectionPrimitive.obj
+         Debug\HingeJoint.obj
+         Debug\Joint.obj
+         Debug\ODEWorld.obj
+         Debug\PlaneCDP.obj
+         Debug\PreCollisionQuery.obj
+         Debug\RBProperties.obj
+         Debug\RBState.obj
+         Debug\RBUtils.obj
+         Debug\RigidBody.obj
+         Debug\SphereCDP.obj
+         Debug\UniversalJoint.obj
+         Physics.vcxproj -> C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\Physics\../binaries/Debug\Physics.lib
+     1>Done Building Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\Physics\Physics.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.53

@@ -1,0 +1,69 @@
+﻿Build started 22-Sep-15 12:34:42 AM.
+     1>Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\gsl\gsl.vcxproj" on node 5 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\gsl.pdb" /Gd /TC /wd4996 /analyze- /errorReport:prompt blas\blas.c blas\cblas.c block\block.c block\file.c block\init.c error.c matrix\getset.c matrix\matrix.c vector\copy.c vector\minmax.c vector\oper.c vector\prop.c vector\swap.c vector\vector.c
+         vector.c
+         swap.c
+         prop.c
+         oper.c
+         minmax.c
+         copy.c
+         matrix.c
+         getset.c
+         error.c
+     1>error.c(40): warning C4474: 'printf' : too many arguments passed for format string
+         error.c(40): note: placeholders and their parameters expect 0 variadic arguments, but 3 were provided
+         init.c
+         file.c
+         block.c
+         cblas.c
+         blas.c
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\copy1.obj" /Fd"Debug\gsl.pdb" /Gd /TC /wd4996 /analyze- /errorReport:prompt matrix\copy.c
+         copy.c
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\file2.obj" /Fd"Debug\gsl.pdb" /Gd /TC /wd4996 /analyze- /errorReport:prompt matrix\file.c
+         file.c
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\init2.obj" /Fd"Debug\gsl.pdb" /Gd /TC /wd4996 /analyze- /errorReport:prompt matrix\init.c
+         init.c
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\minmax1.obj" /Fd"Debug\gsl.pdb" /Gd /TC /wd4996 /analyze- /errorReport:prompt matrix\minmax.c
+         minmax.c
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\oper1.obj" /Fd"Debug\gsl.pdb" /Gd /TC /wd4996 /analyze- /errorReport:prompt matrix\oper.c
+         oper.c
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\prop1.obj" /Fd"Debug\gsl.pdb" /Gd /TC /wd4996 /analyze- /errorReport:prompt matrix\prop.c
+         prop.c
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\swap1.obj" /Fd"Debug\gsl.pdb" /Gd /TC /wd4996 /analyze- /errorReport:prompt matrix\swap.c
+         swap.c
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\file1.obj" /Fd"Debug\gsl.pdb" /Gd /TC /wd4996 /analyze- /errorReport:prompt vector\file.c
+         file.c
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\init1.obj" /Fd"Debug\gsl.pdb" /Gd /TC /wd4996 /analyze- /errorReport:prompt vector\init.c
+         init.c
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"../binaries/Debug\gsl.lib" /LIBPATH:../blaslapack /NOLOGO Debug\blas.obj
+         Debug\cblas.obj
+         Debug\block.obj
+         Debug\file.obj
+         Debug\init.obj
+         Debug\error.obj
+         Debug\getset.obj
+         Debug\matrix.obj
+         Debug\copy.obj
+         Debug\minmax.obj
+         Debug\oper.obj
+         Debug\prop.obj
+         Debug\swap.obj
+         Debug\vector.obj
+         Debug\copy1.obj
+         Debug\file2.obj
+         Debug\init2.obj
+         Debug\minmax1.obj
+         Debug\oper1.obj
+         Debug\prop1.obj
+         Debug\swap1.obj
+         Debug\file1.obj
+         Debug\init1.obj
+         gsl.vcxproj -> C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\gsl\../binaries/Debug\gsl.lib
+     1>Done Building Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\gsl\gsl.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.90

@@ -1,0 +1,34 @@
+﻿Build started 22-Sep-15 12:34:49 AM.
+     1>Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\GLUtils\GLUtils.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\GLUtils.pdb" /Gd /TP /wd4996 /analyze- /errorReport:prompt GLCamera.cpp GLMesh.cpp GLTexture.cpp GLUtils.cpp OBJReader.cpp
+         OBJReader.cpp
+     1>C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\mathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(1119): warning C4056: overflow in floating-point constant arithmetic
+         GLUtils.cpp
+     1>C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(1119): warning C4056: overflow in floating-point constant arithmetic
+         GLTexture.cpp
+         GLMesh.cpp
+     1>C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\mathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(1119): warning C4056: overflow in floating-point constant arithmetic
+         GLCamera.cpp
+     1>C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(1119): warning C4056: overflow in floating-point constant arithmetic
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"..\binaries\Debug\GLUtils.lib" /NOLOGO Debug\GLCamera.obj
+         Debug\GLMesh.obj
+         Debug\GLTexture.obj
+         Debug\GLUtils.obj
+         Debug\OBJReader.obj
+         GLUtils.vcxproj -> C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\GLUtils\..\binaries\Debug\GLUtils.lib
+     1>Done Building Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\GLUtils\GLUtils.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.46

@@ -1,0 +1,20 @@
+﻿Build started 18-Sep-15 2:27:31 PM.
+     1>Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\Utils\Utils.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /I../include /nologo /W3 /WX- /O2 /Ot /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHsc /MT /GS /arch:SSE2 /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\Utils.pdb" /Gd /TP /wd4996 /analyze- /errorReport:prompt BMPIO.cpp Image.cpp Timer.cpp Utils.cpp
+         BMPIO.cpp
+         Image.cpp
+         Timer.cpp
+         Utils.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"..\binaries\Release\Utils.lib" /NOLOGO Release\BMPIO.obj
+         Release\Image.obj
+         Release\Timer.obj
+         Release\Utils.obj
+         Utils.vcxproj -> C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\Utils\..\binaries\Release\Utils.lib
+     1>Done Building Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\Utils\Utils.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.34

@@ -1,0 +1,11 @@
+﻿Build started 18-Sep-15 3:17:54 PM.
+     1>Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\ode-0.13\build\vs2008\ode.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\ode-0.13\build\vs2008\..\..\lib\ReleaseSingleDLL\ode.dll) does not match the Linker's OutputFile property value (C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\ode-0.13\lib\ReleaseSingleDLL\ode_single.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1191,5): warning MSB8012: TargetName(ode) does not match the Linker's OutputFile property value (ode_single). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>Link:
+         ode.vcxproj -> C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\ode-0.13\build\vs2008\..\..\lib\ReleaseSingleDLL\ode.dll
+     1>Done Building Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\ode-0.13\build\vs2008\ode.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.24

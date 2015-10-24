@@ -1,0 +1,61 @@
+﻿Build started 18-Sep-15 2:27:31 PM.
+     1>Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\MathLib\MathLib.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /nologo /W3 /WX- /O2 /Ot /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHsc /MT /GS /arch:SSE2 /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\MathLib.pdb" /Gd /TP /wd4996 /analyze- /errorReport:prompt Capsule.cpp Matrix.cpp Plane.cpp Point3d.cpp Quaternion.cpp Sphere.cpp ThreeTuple.cpp TransformationMatrix.cpp Vector.cpp Vector3d.cpp
+         Capsule.cpp
+     1>../MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(1119): warning C4056: overflow in floating-point constant arithmetic
+         Matrix.cpp
+     1>../MathLib/MathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(1119): warning C4056: overflow in floating-point constant arithmetic
+         Plane.cpp
+     1>../MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(1119): warning C4056: overflow in floating-point constant arithmetic
+         Point3d.cpp
+     1>../MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(1119): warning C4056: overflow in floating-point constant arithmetic
+         Quaternion.cpp
+     1>../MathLib/MathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(1119): warning C4056: overflow in floating-point constant arithmetic
+         Sphere.cpp
+     1>../MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(1119): warning C4056: overflow in floating-point constant arithmetic
+         ThreeTuple.cpp
+     1>../MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+         TransformationMatrix.cpp
+     1>../MathLib/MathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(1119): warning C4056: overflow in floating-point constant arithmetic
+         Vector.cpp
+     1>../MathLib/MathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(1119): warning C4056: overflow in floating-point constant arithmetic
+         Vector3d.cpp
+     1>../MathLib/mathLib.h(38): warning C4005: 'INFINITY': macro redefinition
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\math.h(78): note: see previous definition of 'INFINITY'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(1119): warning C4056: overflow in floating-point constant arithmetic
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"..\binaries\Release\MathLib.lib" /NOLOGO Release\Capsule.obj
+         Release\Matrix.obj
+         Release\Plane.obj
+         Release\Point3d.obj
+         Release\Quaternion.obj
+         Release\Sphere.obj
+         Release\ThreeTuple.obj
+         Release\TransformationMatrix.obj
+         Release\Vector.obj
+         Release\Vector3d.obj
+         MathLib.vcxproj -> C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\MathLib\..\binaries\Release\MathLib.lib
+     1>Done Building Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\MathLib\MathLib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.78
