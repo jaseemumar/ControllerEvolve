@@ -131,12 +131,18 @@ void PoseController::scaleAndLimitTorque(Vector3d* torque, ControlParams* cParam
 /**
 	This method is used to compute the torques that are to be applied at the next step.
 */
+
+
+
+
 void PoseController::computeTorques(DynamicArray<ContactPoint> *cfs){
 	Quaternion qRelD;
 	Vector3d relAngVelD;
 
 	Quaternion qRel;
 	Vector3d wRel;
+
+	Point3d pWorld;
 
 	ReducedCharacterState rs(&desiredPose);
 
@@ -147,7 +153,7 @@ void PoseController::computeTorques(DynamicArray<ContactPoint> *cfs){
 				character->getRelativeOrientation(i, &qRel);
 				//and the relative angular velocity, computed in parent coordinates
 				character->getRelativeAngularVelocity(i, &wRel);
-				//now compute the torque
+
 				torques[i] = computePDTorque(qRel, rs.getJointRelativeOrientation(i), wRel, rs.getJointRelativeAngVelocity(i), &controlParams[i]);
 				//the torque is expressed in parent coordinates, so we need to convert it to world coords now
 				torques[i] = character->getJoint(i)->getParent()->getWorldCoordinates(torques[i]);

@@ -108,7 +108,11 @@ private:
 
 
 	//the phase parameter, phi must have values between 0 and 1, and it indicates the progress through the current state.
+	
 	double phi;
+
+	//indicates the progress through the current state
+	double newPhi;
 
 	//this quaternion gives the current heading of the character. The complex conjugate of this orientation is used
 	//to transform quantities from world coordinates into a rotation/heading-independent coordinate frame (called the character frame).
@@ -211,6 +215,10 @@ public:
 	*/
 	virtual ~SimBiController(void);
 
+
+	virtual void computeJTTorques();
+
+	void computeJTTorqueForChain(DynamicArray<Joint*>&, Vector3d F);
 	/**
 		This method is used to compute the torques that are to be applied at the next step.
 	*/

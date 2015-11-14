@@ -33,6 +33,7 @@ class Joint;
 */
 
 class BalanceFeedback{
+	/**to be replaced with virtual forces**/
 public:
 	BalanceFeedback(void);
 	virtual ~BalanceFeedback(void);

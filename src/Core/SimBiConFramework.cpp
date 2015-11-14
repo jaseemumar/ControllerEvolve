@@ -116,6 +116,7 @@ bool SimBiConFramework::advanceInTime(double dt, bool applyControl, bool recompu
 	else
 		if (recomputeTorques == true)
 			con->computeTorques(pw->getContactForces());
+			
 
 	//not applying control is the same as just resetting the torques
 	con->applyTorques();
@@ -127,6 +128,7 @@ bool SimBiConFramework::advanceInTime(double dt, bool applyControl, bool recompu
 	con->updateDAndV();
 
 	//here we are assuming that each FSM state represents a new step. 
+	//to be removed. No more FSM 
 	if (newFSMState){
 		lastStepTaken = Vector3d(lastFootPos, con->getStanceFootPos());
 		//now express this in the 'relative' character coordinate frame instead of the world frame

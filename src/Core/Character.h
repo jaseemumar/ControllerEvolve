@@ -39,6 +39,14 @@ private:
 	//keep a list of the character's joints, for easy access
 	DynamicArray<Joint*> joints;
 
+	//todo: chains of joints, for legs
+	DynamicArray<Joint*> fRLegJoints;
+	DynamicArray<Joint*> fLLegJoints;
+	DynamicArray<Joint*> rRLegJoints;
+	DynamicArray<Joint*> rLLegJoints;
+
+
+
 	/**
 		this method is used to rotate the character about the vertical axis, so that its heading has the value that is given as a parameter.
 		It is assumed that the quaternion passed in here represents a rotation about the vertical axis - that's why it is a private method
@@ -50,6 +58,8 @@ private:
 		about the vertical axis, so that it's default heading has the value that is given as a parameter.
 	*/
 	void setHeading(Quaternion heading, DynamicArray<double>* state, int start = 0);
+
+	void getLegChains();
 
 public:
 	/**

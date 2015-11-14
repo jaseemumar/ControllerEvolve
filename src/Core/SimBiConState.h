@@ -91,7 +91,8 @@ public:
 
 		double feedbackValue = computeFeedback(con, j, phi, d, v);
 
-		return Quaternion::getRotationQuaternion(baseAngle + feedbackValue, rotationAxis);
+		//return Quaternion::getRotationQuaternion(baseAngle + feedbackValue, rotationAxis);
+		return Quaternion::getRotationQuaternion(baseAngle + feedbackValue, rotationAxis); 
 	}
 
 	/**

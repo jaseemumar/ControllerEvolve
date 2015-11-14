@@ -335,7 +335,6 @@ void ControllerEditor::processTask(){
 	//if we still have time during this frame, or if we need to finish the physics step, do this until the simulation time reaches the desired value
 	while (simulationTime/maxRunningTime < Globals::animationTimeToRealTimeRatio){
 		simulationTime += SimGlobals::dt;
-
 		double phi = conF->getController()->getPhase();
 		lastFSMState = conF->getController()->getFSMState();
 		double signChange = (conF->getController()->getStance() == RIGHT_STANCE)?-1:1;

@@ -78,6 +78,7 @@ protected:
 	//this is the array of joint properties used to specify the 
 	DynamicArray<ControlParams> controlParams;
 
+
 	/**
 		This method is used to parse the information passed in the string. This class knows how to read lines
 		that have the name of a joint, followed by a list of the pertinent parameters. If this assumption is not held,
@@ -95,6 +96,11 @@ public:
 		This method is used to compute the torques, based on the current and desired poses
 	*/
 	virtual void computeTorques(DynamicArray<ContactPoint> *cfs);
+
+	/**
+		This method is used to compute the torques from Jacobian Transpose Control
+	*/
+
 
 	/**
 		This method is used to compute the PD torque, given the current relative orientation of two coordinate frames (child and parent),

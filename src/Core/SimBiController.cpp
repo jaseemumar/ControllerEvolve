@@ -391,7 +391,61 @@ RigidBody* SimBiController::getRBBySymbolicName(char* sName){
 
 }
 
+void SimBiController::computeJTTorques() {
+	//calculate force
+	Vector3d F(0, 0,0);
+	double currentHeight = root->getCMPosition().y;
+	Vector3d currentSpeed = root->getCMVelocity();
+	//tprintf("Height:%f\n",currentHeight);
+	//tprintf("Current Speed:%f\n", currentSpeed.z);
+	double targetHeight = 0.75;
+	double targetHorizontalSpeed = 1;
+	double Kp = -3000.0;
+	double Kd = -300.0;
+	double Kv = -300.0;
+	F.y = Kp*(targetHeight - currentHeight ) + Kd*(-currentSpeed.y);
+	F.z = Kv*(targetHorizontalSpeed - currentSpeed.z);
 
+	//find number of stance legs
+	int noOfStanceLegs = 2;
+	int i = 0;
+	if (stanceFoot == lFoot) {
+		computeJTTorqueForChain(character->rLLegJoints,F);
+	} 
+	else {
+		computeJTTorqueForChain(character->rRLegJoints,F);
+	}
+
+	if (stanceFrontFoot == lFrontFoot) {
+		computeJTTorqueForChain(character->fLLegJoints,F);
+	}
+	else {
+		computeJTTorqueForChain(character->fRLegJoints,F);
+	}
+	
+}
+
+void SimBiController::computeJTTorqueForChain(DynamicArray<Joint *>& legChain, Vector3d F) {
+	for (unsigned int i = 0; i < legChain.size(); i++) {
+		Joint * joint = legChain[i];
+		int id = character->getJointIndex(joint->name);
+		Point3d jointPos = joint->getParent()->getWorldCoordinates(joint->getParentJointPosition());
+		Point3d footPos = stanceFoot->getCMPosition();
+		Point3d relativePos = jointPos - footPos;
+		Vector3d ax = joint->getParent()->getWorldCoordinates(Vector3d(1, 0, 0));
+		Vector3d ay = joint->getParent()->getWorldCoordinates(Vector3d(0, 1, 0));
+		Vector3d az = joint->getParent()->getWorldCoordinates(Vector3d(0, 1, 0));
+		Vector3d Jpx, Jpy, Jpz;
+		Jpx.setToCrossProduct(ax, relativePos);
+		Jpy.setToCrossProduct(ay, relativePos);
+		Jpz.setToCrossProduct(az, relativePos);
+		double tx = Jpx.dotProductWith(F);
+		double ty = Jpy.dotProductWith(F);
+		double tz = Jpz.dotProductWith(F);
+		Vector3d torque(tx, ty, tz);
+		torques[id] += torque;
+	}
+}
 
 /**
 	This method is used to compute the torques that are to be applied at the next step.
@@ -438,7 +492,7 @@ void SimBiController::computeTorques(DynamicArray<ContactPoint> *cfs){
 		Vector3d d0, v0; 
 		computeD0( phiToUse, &d0 );
 		computeV0( phiToUse, &v0 );	
-		newOrientation = curState->sTraj[i]->evaluateTrajectory(this, character->getJoint(jIndex), stance, phiToUse, d - d0, v - v0);
+		newOrientation = curState->sTraj[i]->evaluateTrajectory(this, character->getJoint(jIndex), stance, phiToUse, d-d0, v-v0);// removed feedback
 
 		//if the index is -1, it must mean it's the root's trajectory. Otherwise we should give an error
 		if (jIndex == -1){
@@ -457,12 +511,15 @@ void SimBiController::computeTorques(DynamicArray<ContactPoint> *cfs){
 	//compute the torques now, using the desired pose information - the hip torques will get overwritten below
 	PoseController::computeTorques(cfs);
 
-	double stanceHipToSwingHipRatio = getStanceFootWeightRatio(cfs);
+	//double stanceHipToSwingHipRatio = getStanceFootWeightRatio(cfs);
 
-	if (stanceHipToSwingHipRatio < 0)
-		rootControlParams.strength = 0;
+	//if (stanceHipToSwingHipRatio < 0)
+		//rootControlParams.strength = 0;
 	//and now separetely compute the torques for the hips - together with the feedback term, this is what defines simbicon
-	computeHipTorques(qRootD, poseRS.getJointRelativeOrientation(swingHipIndex), stanceHipToSwingHipRatio);
+	//computeHipTorques(qRootD, poseRS.getJointRelativeOrientation(swingHipIndex), stanceHipToSwingHipRatio);
+
+	//compute Jacobian Transpose Torques
+	computeJTTorques();
 
 	double h = character->getRoot()->getCMPosition().y;
 

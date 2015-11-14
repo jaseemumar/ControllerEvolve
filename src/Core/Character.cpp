@@ -36,6 +36,14 @@ Character::Character(ArticulatedFigure* ch){
 	//populate the joints while at it
 	joints.clear();
 	af->addJointsToList(&joints);
+
+	getLegChains();
+
+	for (int i = 0; i < joints.size(); i++) {
+		tprintf("%d:%s\n", i, joints[i]->getName());
+
+	}
+
 }
 
 /**
@@ -45,6 +53,25 @@ Character::~Character(void){
 	//nothing to do. We'll let whoever created the world deal with freeing it up
 }
 
+
+void Character::getLegChains() {
+	fRLegJoints.push_back(getJointByName("rShoulder"));
+	fRLegJoints.push_back(getJointByName("rElbow"));
+	fRLegJoints.push_back(getJointByName("rFrontAnkle"));
+	fLLegJoints.push_back(getJointByName("lShoulder"));
+	fLLegJoints.push_back(getJointByName("lElbow"));
+	fLLegJoints.push_back(getJointByName("lFrontAnkle"));
+	rRLegJoints.push_back(getJointByName("rHip"));
+	rRLegJoints.push_back(getJointByName("rKnee"));
+	rRLegJoints.push_back(getJointByName("rAnkle"));
+	rLLegJoints.push_back(getJointByName("lHip"));
+	rLLegJoints.push_back(getJointByName("lKnee"));
+	rLLegJoints.push_back(getJointByName("lAnkle"));
+
+	for (unsigned int i = 0; i < fRLegJoints.size(); i++) {
+		tprintf("added %s to a legchain\n",fRLegJoints[i]->name);
+	}
+}
 /**
 	This method is used to populate the relative orientation of the parent and child bodies of joint i.
 */
@@ -483,3 +510,4 @@ void Character::saveReducedStateToFile(char* fName){
 
 	saveReducedStateToFile(fName, state);
 }
+

@@ -1,4 +1,4 @@
-﻿Build started 21-Oct-15 6:01:26 AM.
+﻿Build started 15-Nov-15 1:19:50 AM.
      1>Project "C:\Users\jaseem\Workspace\SimbiconSourceCode2\release\src\AppGUI\AppGUI.vcxproj" on node 2 (Build target(s)).
      1>Link:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../binaries/Debug\AppGUI.exe" /INCREMENTAL /NOLOGO /LIBPATH:../../lib /LIBPATH:../binaries/debug /LIBPATH:../../lib/ooqpd glew32.lib opengl32.lib glu32.lib tcl84.lib tk84.lib wsock32.lib comctl32.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"../binaries/Debug\AppGUI.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT:NO /IMPLIB:"../binaries/Debug\AppGUI.lib" /MACHINE:X86 /SAFESEH:NO Debug\Application.obj
@@ -24,4 +24,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.54
+Time Elapsed 00:00:01.29

@@ -27,15 +27,6 @@ A_RigidBody
 	name head
 	mesh ../data/models/dog/head.obj
 	colour 0.6 0.6 0.6 1
-	mesh ../data/models/dog/teeth.obj
-	colour 1.0 1.0 1.0 1
-	mesh ../data/models/dog/eyes.obj
-	colour 0.8 0.8 0.8 1
-	mesh ../data/models/dog/eyes_2.obj
-	colour 0.2 0.2 0.2 1
-	mesh ../data/models/dog/eyes_3.obj
-	colour 0.4 0.4 0.4 1
-	
 	mass 5.4
 	moi 0.053 0.04 0.02
 	CDP_Capsule 0 0 0.10 0 0 -0.05 0.08
@@ -81,13 +72,10 @@ A_RigidBody
 	mesh ../data/models/dog/lfoot.obj
 	colour 0.6 0.6 0.6 1
 
-	mesh ../data/models/dog/lclaws.obj
-	colour 0.3 0.3 0.3 1
-
 
 	mass 1.6
 	moi 0.007 0.007 0.003
-	CDP_Box 0.07 0.03 0.08 -0.07 -0.04 -0.1
+	CDP_Box 0.07 0.0075 0.08 -0.07 -0.04 -0.1
 	
 	frictionCoefficient 1.5
 	restitutionCoefficient 0.35	
@@ -130,11 +118,10 @@ A_RigidBody
 	name rFoot
 	mesh ../data/models/dog/rfoot.obj
 	colour 0.6 0.6 0.6 1
-	mesh ../data/models/dog/rclaws.obj
-	colour 0.3 0.3 0.3 1	
+
 	mass 1.6
 	moi 0.007 0.007 0.003
-	CDP_Box 0.07 0.03 0.08 -0.07 -0.04 -0.1
+	CDP_Box 0.07 0.03 0.08 -0.07 -0.015 -0.1
 	frictionCoefficient 1.5
 	restitutionCoefficient 0.35	
 /End
@@ -180,14 +167,9 @@ A_RigidBody
 	name lFrontFoot
 	mesh ../data/models/dog/lfoot.obj
 	colour 0.6 0.6 0.6 1
-
-	mesh ../data/models/dog/lclaws.obj
-	colour 0.3 0.3 0.3 1
-
 	mass 1.6
 	moi 0.007 0.007 0.003
-	CDP_Box 0.07 0.03 0.08 -0.07 -0.04 -0.1
-	
+	CDP_Box 0.07 0.03 0.08 -0.07 -0.015 -0.1
 	frictionCoefficient 1.5
 	restitutionCoefficient 0.35	
 /End
@@ -233,11 +215,10 @@ A_RigidBody
 	name rFrontFoot
 	mesh ../data/models/dog/rfoot.obj
 	colour 0.6 0.6 0.6 1
-	mesh ../data/models/dog/rclaws.obj
-	colour 0.3 0.3 0.3 1	
+
 	mass 1.6
 	moi 0.007 0.007 0.003
-	CDP_Box 0.07 0.03 0.08 -0.07 -0.04 -0.1
+	CDP_Box 0.07 0.03 0.09 -0.07 -0.015 -0.1
 	frictionCoefficient 1.5
 	restitutionCoefficient 0.35	
 /End
@@ -246,9 +227,9 @@ A_RigidBody
 A_RigidBody 
 	name tail1
 	mesh ../data/models/dog/tail_1.obj
-	mass 3.8
+	mass 1.8
 	moi 0.02 0.02 0.01
-	CDP_Capsule 0 0 0.08 0 0 -0.08 0.08
+	CDP_Capsule 0 0 0.09 0 0 -0.09 0.025
 	colour 0.6 0.6 0.6 1
 	frictionCoefficient 0.8
 	restitutionCoefficient 0.35	
@@ -257,9 +238,9 @@ A_RigidBody
 A_RigidBody 
 	name tail2
 	mesh ../data/models/dog/tail_2.obj
-	mass 3.4
-	moi 0.018 0.018 0.01
-	CDP_Capsule 0 0 0.06 0 0 -0.06 0.065
+	mass 1.0
+	moi 0.008 0.008 0.005
+	CDP_Capsule 0 0 0.07 0 0 -0.07 0.02
 	colour 0.55 0.55 0.55 1
 	frictionCoefficient 0.8
 	restitutionCoefficient 0.35	
@@ -268,43 +249,10 @@ A_RigidBody
 A_RigidBody 
 	name tail3
 	mesh ../data/models/dog/tail_3.obj
-	mass 3.01
-	moi 0.016 0.016 0.01
-	CDP_Capsule 0 0 0.06 0 0 -0.06 0.05
-	colour 0.5 0.5 0.5 1
-	frictionCoefficient 0.8
-	restitutionCoefficient 0.35	
-/End
-
-A_RigidBody 
-	name tail4
-	mesh ../data/models/dog/tail_4.obj
-	mass 1.75
-	moi 0.01 0.01 0.005
-	CDP_Capsule 0 0 0.06 0 0 -0.06 0.04
-	colour 0.45 0.45 0.45 1
-	frictionCoefficient 0.8
-	restitutionCoefficient 0.35	
-/End
-
-A_RigidBody 
-	name tail5
-	mesh ../data/models/dog/tail_5.obj
-	mass 1.3
-	moi 0.01 0.01 0.005
-	CDP_Capsule 0 0 0.08 0 0 -0.08 0.03
-	colour 0.4 0.4 0.4 1
-	frictionCoefficient 0.8
-	restitutionCoefficient 0.35	
-/End
-
-A_RigidBody 
-	name tail6
-	mesh ../data/models/dog/tail_6.obj
 	mass 1.0
-	moi 0.01 0.01 0.005
-	CDP_Capsule 0 0 0.2 0 0 0 0.02
-	colour 0.35 0.35 0.35 1
+	moi 0.008 0.008 0.005
+	CDP_Capsule 0 0 0.07 0 0 -0.07 0.02
+	colour 0.55 0.55 0.55 1
 	frictionCoefficient 0.8
 	restitutionCoefficient 0.35	
 /End
@@ -317,7 +265,7 @@ ArticulatedFigure
 		name body_neck
 		parent body
 		child neck
-		jointPPos 0 0.05 0.35
+		jointPPos 0 0.05 0.375
 		jointCPos 0 -0.16 0.02
 		jointLimits -0.6 1.0 -0.6 0.6 -0.6 0.6
 	/Joint
@@ -494,56 +442,29 @@ hingeJoint 1 0 0
 		name tail_1
 		parent body
 		child tail1
-		jointPPos 0 0.03 -0.28
+		jointPPos 0 0.05 -0.25
 		jointCPos 0 0 0.08
-		jointLimits -0.3 0.3 -0.3 0.3
+		jointLimits -1.5 1.5 -1.5 1.5
 	/Joint
 	
 	universalJoint 1 0 0 0 1 0
 		name tail_2
 		parent tail1
 		child tail2
-		jointPPos 0 0.0 -0.11
-		jointCPos 0 0 0.09
-		jointLimits -0.3 0.3 -0.3 0.3
+		jointPPos 0 0.0 -0.08
+		jointCPos 0 0 0.07
+		jointLimits -1.5 1.5 -1.5 1.5
 	/Joint
-	
+
 	universalJoint 1 0 0 0 1 0
 		name tail_3
 		parent tail2
 		child tail3
-		jointPPos 0 0.0 -0.1
-		jointCPos 0 0 0.1
-		jointLimits -0.3 0.3 -0.3 0.3
+		jointPPos 0 0.0 -0.08
+		jointCPos 0 0 0.09
+		jointLimits -1.5 1.5 -1.5 1.5
 	/Joint
 
-	universalJoint 1 0 0 0 1 0
-		name tail_4
-		parent tail3
-		child tail4
-		jointPPos 0 0.0 -0.1
-		jointCPos 0 0 0.1
-		jointLimits -0.3 0.3 -0.3 0.3
-	/Joint	
-
-	universalJoint 1 0 0 0 1 0
-		name tail_5
-		parent tail4
-		child tail5
-		jointPPos 0 0.0 -0.1
-		jointCPos 0 0 0.09
-		jointLimits -0.3 0.3 -0.3 0.3
-	/Joint	
-
-	universalJoint 1 0 0 0 1 0
-		name tail_6
-		parent tail5
-		child tail6
-		jointPPos 0 0.0 -0.1
-		jointCPos 0 0 0.22
-		jointLimits -0.3 0.3 -0.3 0.3
-	/Joint	
-	
 		
 
 /ArticulatedFigure
